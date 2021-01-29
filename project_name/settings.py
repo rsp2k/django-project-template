@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'health_check.contrib.migrations',
     #  'health_check.contrib.redis',
     'debug_toolbar',
+    'huey.contrib.djhuey',
 ]
 
 MIDDLEWARE = [
@@ -186,7 +187,7 @@ def show_toolbar(request):
 DEBUG_TOOLBAR_CONFIG = {"SHOW_TOOLBAR_CALLBACK": show_toolbar}
 
 if DEBUG:
-    # Allow ./manage.py shell_plus --notebook to query models https://code.djangoproject.com/ticket/31056
+    # Allow ./manage.py-tpl shell_plus --notebook to query models https://code.djangoproject.com/ticket/31056
     os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "true"
 
 
