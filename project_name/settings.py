@@ -40,6 +40,11 @@ DEBUG = (os.environ.get('DJANGO_DEBUG', False) == "True")\
 
 ALLOWED_HOSTS = []
 
+ALLOWED_HOSTS_ENV = os.environ.get('DJANGO_ALLOWED_HOSTS', '*')
+if ALLOWED_HOSTS_ENV:
+    for host in ALLOWED_HOSTS_ENV.split(','):
+        ALLOWED_HOSTS.append(host)
+
 
 # Application definition
 
