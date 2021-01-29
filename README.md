@@ -19,6 +19,7 @@ Used with ``django-admin startapp --template`` command. Reference this repositor
   - sentry-sdk==0.19.5
     - Enabled with SENTRY_DSN 
       - Optionally set SENTRY_ENVIRONMENT
+  - huey==2.3.0  
   - gunicorn==20.0.4
 
 ## Steps to deploy
