@@ -105,12 +105,14 @@ WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
 # Using dj-database-url for ease of cramming everything into one env variable
 # https://github.com/jacobian/dj-database-url
 DATABASE_URL = os.environ.get('DJANGO_DATABASE_URL', 'sqlite://')
+
 DATABASES = {
-    'default': dj_database_url.config(
-        conn_max_age=os.environ.get('DJANGO_DATABASE_CONN_MAX_AGE', None),
-        ssl_require=os.environ.get('DJANGO_DATABASE_SSL_REQUIRE', False),
-    ),
+    'default': dj_database_url.config()
 }
+#        conn_max_age=os.environ.get('DJANGO_DATABASE_CONN_MAX_AGE', None),
+#        ssl_require=os.environ.get('DJANGO_DATABASE_SSL_REQUIRE', False),
+#    ),
+#}
 
 REDIS_URL = os.environ.get('DJANGO_REDIS_URL', 'redis://redis:6379')
 
