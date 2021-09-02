@@ -36,5 +36,5 @@ Used with ``django-admin startapp --template`` command. Reference this repositor
 6. Happy Development!
 
 ## References
-* Uses [django-admin startapp ](https://docs.djangoproject.com/en/3.1/ref/django-admin/)
+* Uses [django-admin startapp ](https://docs.djangoproject.com/en/3.1/ref/django-admin/#startapp)
 * [Default app template](https://github.com/django/django/tree/master/django/conf/project_template)
