@@ -1,12 +1,44 @@
-Django==3.2.7
-#https://github.com/rsp2k/django/archive/master.zip
-dj-database-url==0.5.0
-django-debug-toolbar==3.2.2
-django-extensions==3.1.0
-django-grappelli==2.15.1
-django-health-check==3.16.4
-gunicorn==20.1.0
-ipython==7.19.0
-sentry-sdk==0.19.5
-redis==3.5.3
-Werkzeug==2.0.1
+arrow
+Django
+django-allauth
+django-bootstrap-v5
+django-bootstrap-icons
+django-crispy-forms
+crispy-bootstrap5
+django-debug-toolbar
+django-dirtyfields
+django-extensions
+django-fernet-fields
+django-filebrowser
+django-fsm @ git+https://github.com/rsp2k/django-fsm.git
+django-fsm-admin @ git+https://github.com/rsp2k/django-fsm-admin.git
+django-fsm-log @git+https://github.com/rsp2k/django-fsm-log.git
+django-fernet-fields @git+https://github.com/rsp2k/django-fernet-fields.git
+django-grappelli
+django-health-check
+django-huey-monitor
+django-model-utils
+django-nested-admin
+django_redis
+django_reversion
+django-simple-menu
+django-tables2
+django-timezone-field
+django-user-visit
+feedparser # For grappelli dashboard
+GitPython
+graphviz
+gunicorn
+huey
+ipython
+psycopg2-binary
+pydot
+pyparsing
+pytz
+redis
+sentry-sdk
+PyYAML>=5.3.1,<6
+tzdata
+uvicorn
+Werkzeug
+
